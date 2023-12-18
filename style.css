@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+    background-color: #202124 !important;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    color: #E8EAED;
+}
+
+.container {
+    min-height: 75vh;
+}
+
+.container>img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-bar {
+    border-radius: 32px;
+    border: 2px solid #5F6368;
+    padding: 0px 22px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+    background-color: #303134;
+    border-color: #303134;
+    box-shadow: 0px 0px 4px 2px #1F2022;
+}
+
+.search-bar:focus-within {
+    border-radius: 32px 32px 0px 0px;
+}
+
+.close-icon {
+    display: none;
+}
+
+.search-bar:focus-within .close-icon {
+    display: block;
+}
+
+.search-bar input {
+    outline: none;
+    width: 100%;
+    color: #E8EAED;
+    letter-spacing: 1.2px;
+    font-family: inherit;
+}
+
+.suggestion {
+    display: none;
+    color: #E8EAED;
+    background-color: #303134;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 5px 4px 2px #1F2022;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.suggestion p {
+    display: flex;
+    text-align: center;
+    padding: 0px 25px;
+    margin-top: 12px;
+}
+
+.suggestion-logo img {
+    margin-top: 8px;
+    padding-left: 25px;
+}
+
+.top-border {
+    border-top: 1px solid #5F6368;
+}
+
+.search-bar:focus-within+.suggestion {
+    display: block;
+}
+
+.suggestion div:hover {
+    background-color: #3c4043;
+}
+
+.doodle-logo {
+    position: fixed;
+    right: 25px;
+    bottom: 0px;
+}
+
+button {
+    /* background-color: transparent; */
+    color: #E8EAED;
+    border: 1px solid;
+    border-color: #303134;
+    background-color: #303134;
+}
+
+@media screen and (max-width: 350px) {
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin: 12px auto;
+    }
+}
